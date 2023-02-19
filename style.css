@@ -37,10 +37,11 @@
      color: #fff;
      place-items: center;
   }
+
   #welcome-section{
     margin: 0;
     background-color: #357171;
-    height: calc(100vh - 8.5%);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,4 +68,9 @@
     color: #Ef964a;
     font-weight: bold;
     font-size: var(--tech-font);
+  }
+  #projects{
+    background-color: gray;
+    height: calc(100vh + 350px);
+    margin: -20px 0;
   }
