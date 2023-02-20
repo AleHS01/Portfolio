@@ -82,6 +82,7 @@ span[class="java"]{
   height: calc(100vh + 350px);
   padding: 80px 0px 0px 0px;
   margin: -1px 0;
+  max-width: 100%;
 }
 #projects h1{
   text-align: center;
@@ -93,6 +94,18 @@ span[class="java"]{
   height: 3px;
   border: 0px;
   background-color: white;
+}
+button{
+  width: 40%;
+  height: 40px;
+  border-radius: 10%;
+  border: 0;
+  background-color: #00f7fc;
+  font-size: 22px;
+  transition: transform 0.5s ease-in-out;
+}
+button:hover{
+  transform: scale(1.1);
 }
 .main-container{
   display: flex;
@@ -143,7 +156,7 @@ footer{
   font-family: var(--font-code);
   padding: 25px 0 0 0;
 }
-@media only screen and (min-width: 600px) and (max-width: 768px){
+@media only screen and (min-width: 320px) and (max-width: 1024px){
   nav ul{
     font-size: 20px;
   }
@@ -160,11 +173,11 @@ footer{
     font-size:22px;
   }
   .main-container{
-    gap: 15px;
+    gap: 20px;
   }
   .container{
-  width: 250px;
-  height: 260px;
+  width: 280px;
+  height: 300px;
 }
 .Contact{
   height: calc(100vh - 250px);
@@ -175,4 +188,26 @@ footer{
   .Contact p{
     font-size: 16px;
   }
+  #projects hr{
+    width: 75%;
+  }
+  #projects h1{
+    font-size: 46px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1220px){
+  #projects h1{
+    font-size: 46px;
+  }
+  
+  .main-container{
+    gap: 15px;
+  }
+  .container{
+  width: 350px;
+  height: 360px;
+}
+#projects hr{
+  width: 75%;
+}
 }
