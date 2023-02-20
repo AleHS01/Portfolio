@@ -4,6 +4,10 @@
 }
 :root{
   --tech-font: 32px;
+  --font-code: monospace;
+}
+.fab{
+  font-family: "Font Awesome 5 Brands";
 }
 body{
   margin: 0;
@@ -34,7 +38,7 @@ nav ul{
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
    list-style: none;
-   font-size: 28px;
+   font-size: 36px;
    color: #fff;
    place-items: center;
 }
@@ -77,15 +81,15 @@ span[class="java"]{
   background-color: #649c8c;
   height: calc(100vh + 350px);
   padding: 80px 0px 0px 0px;
-  margin: -1px;
+  margin: -1px 0;
 }
 #projects h1{
   text-align: center;
-  font-size: 42px;
+  font-size: 62px;
   margin-bottom: 0px;
 }
 #projects hr{
-  width: 47%;
+  width: 52%;
   height: 3px;
   border: 0px;
   background-color: white;
@@ -106,4 +110,69 @@ span[class="java"]{
   height: 450px;
   background-color: beige;
   border-radius: 5px;
+}
+.Contact{
+  background-color: #435b78;
+  height: 100vh;
+  padding-top: 25%;
+  text-align: center
+}
+.Contact h1{
+  margin: -1px 0 0 0;;
+  font-size: 64px;
+}
+.Contact p{
+  font-size: 18px;
+  margin-top: 0;
+  font-family: var(--font-code);
+}
+.contact-links {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  font-size: 26px;
+}
+footer{
+  background-color: #121c1a;
+  height: 3em;
+  width:100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--font-code);
+  padding: 25px 0 0 0;
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  nav ul{
+    font-size: 20px;
+  }
+  #welcome-section h1{
+    font-size: 48px;
+  }
+  #welcome-section p{
+    font-size: 20px;
+  }
+  span[class="web"]{
+    font-size:22px;
+  }
+  span[class="java"]{
+    font-size:22px;
+  }
+  .main-container{
+    gap: 15px;
+  }
+  .container{
+  width: 250px;
+  height: 260px;
+}
+.Contact{
+  height: calc(100vh - 250px);
+}
+  .Contact h1{
+    font-size: 48px;
+  }
+  .Contact p{
+    font-size: 16px;
+  }
 }
