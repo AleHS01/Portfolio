@@ -98,7 +98,7 @@ span[class="java"]{
 button{
   width: 40%;
   height: 40px;
-  border-radius: 10%;
+  border-radius: 8px;
   border: 0;
   background-color: #00f7fc;
   font-size: 22px;
@@ -195,7 +195,7 @@ footer{
     font-size: 46px;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1220px){
+@media only screen and (min-width: 1025px){
   #projects h1{
     font-size: 46px;
   }
@@ -204,8 +204,8 @@ footer{
     gap: 15px;
   }
   .container{
-  width: 350px;
-  height: 360px;
+  width: 280px;
+  height: 290px;
 }
 #projects hr{
   width: 75%;
