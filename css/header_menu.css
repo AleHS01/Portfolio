@@ -17,6 +17,7 @@ header{
     padding: 0;
   }
   nav ul{
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
@@ -25,16 +26,31 @@ header{
      color: #fff;
      place-items: center;
      font-family: 'Shantell Sans', serif;
-    }
-    nav ul li{
-        width: 100px;
-    }
-    nav ul li:hover{
-      color: #357171;
-    }
-    .bar{
-        position: absolute;
-        height: 1px;
-        width: 100px;
-        background-color: white;
-    }
+}
+nav ul li{
+     width: 100px;
+}
+nav ul li:hover{
+    color: #357171;
+}
+nav ul li a.a-left{
+     position: relative;
+    left: 30px;
+}
+.bar{
+    position: relative;
+    height: 2px;
+    background-color: white;
+    width: 0%;
+    transition: all 0.5s ease-out;
+}
+.a1{
+    padding-left: 10px;
+}
+nav ul li:hover .bar{
+    width: 100%;
+}
+nav ul li .bar:focus{
+    width: 100%;
+    display: block;
+}
