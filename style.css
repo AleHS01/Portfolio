@@ -19,7 +19,7 @@ header{
   display: flex;
   justify-content: flex-end;
   background-color: #0aa778;
-  height: 8.5%;
+  height: 60px;
   padding: 0 40px;
   top: 0%;
   left: 0%;
@@ -38,9 +38,10 @@ nav ul{
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
    list-style: none;
-   font-size: 36px;
+   font-size: 28px;
    color: #fff;
    place-items: center;
+   font-family: 'Montserrat', sans-serif;
 }
 section{
   margin-top: 1px;
@@ -60,7 +61,8 @@ section{
   margin: 0;
 }
 #welcome-section h1{
-  font-size: 80px;
+  font-size: 6rem;
+  font-family: 'Sacramento', sans-serif;
 }
 #welcome-section p{
   font-family: monospace;
