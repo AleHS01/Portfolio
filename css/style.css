@@ -15,34 +15,6 @@ body{
   font-family: Helvetica, sans-serif;
   color: #fff;
 }
-header{
-  display: flex;
-  justify-content: flex-end;
-  background-color: #0aa778;
-  height: 60px;
-  padding: 0 40px;
-  top: 0%;
-  left: 0%;
-  align-items: center;
-  border-bottom: 1px solid rgba(37, 45, 45, 0.8);
-  position: sticky;
-}
-a{
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-}
-nav ul{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
-   list-style: none;
-   font-size: 28px;
-   color: #fff;
-   place-items: center;
-   font-family: 'Montserrat', sans-serif;
-}
 section{
   margin-top: 1px;
   margin-bottom: 0px;
@@ -50,7 +22,7 @@ section{
 #welcome-section{
   margin: 0;
   background-color: #357171;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
