@@ -1,0 +1,93 @@
+*{
+    scroll-behavior: smooth;
+    
+  }
+  html{
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  main{
+    margin: 10px 30px;
+  }
+  main, a{
+    color: #606160;
+  }
+  nav a:not(#Reference a){ 
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+  nav header, .sticky a:not(#Reference a){
+    border-bottom: 2px solid #eee;
+      
+  }
+  a:not(#Reference a):last-of-type{
+    border-bottom: 0;
+  }
+  #Reference a{
+    color: #000e3d;
+  }
+  nav header{
+    text-align: center;
+    height: 3.5rem;
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+  nav{
+    border-right: 4px solid black;
+  }
+  nav, .sticky{
+    width: 100%;
+    max-width: 280px;
+    min-width: 200px;
+  }
+  header{
+    font-size: 28px;
+    margin: 15px 0;
+    font-weight: normal;
+    color: #000e3d;
+  }
+  a:not(#Reference a):hover{
+    background-color: #000e3d;
+    color: #fff;
+  }
+  .sticky{
+    position: fixed;
+    top: 0;
+  }
+  .code-div{
+    width: 95%;
+    height:100%;
+    min-height: 30px;
+    background-color: #eee;
+    padding: 15px 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  code{
+    display: block;
+    margin: 5px 0;
+    
+  }
+  @media (min-width: 481px) and (max-width: 1250px){
+    nav header{
+      font-size: 24px;
+      height: 1.8rem;
+    }
+    nav, .sticky{
+      width: 150px;
+    }
+    nav a:not(#Reference a){ 
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+  }
