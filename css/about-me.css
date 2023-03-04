@@ -12,10 +12,10 @@
   }
 section{
     width: 100%;
+    height: calc(100vh - 60px);
 }
 /* About me - Section 1 */
 #about-me{
-    height: calc(100vh - 60px);
     background-color: #357171;
     display: flex;
     flex-direction: column;
@@ -78,15 +78,15 @@ section{
 }
 /* Learning - Section 2 */
 #learn{
-    height: calc(100vh - 60px);
-    background-color: #649c8c;
+    /* background-color: #649c8c; */
+    background-color: #75DAAD;
 }
-#learn h1{
+#learn h1, #plans h1{
     font-size: 4rem;
     padding: 50px;
     text-align: center;
 }
-#learn hr{
+#learn hr, #plans hr{
     width: 8%;
     border-top: 10px dotted #EEF2E6;
     margin: 0 auto;
@@ -137,5 +137,38 @@ section{
 }
 /* Plans - Section 3 */
 #plans{
-
+    /* background-color: #75DAAD; */
+    background-color: #5ca18d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#plans img{
+    width: 150px;
+    height: 150px;
+}
+.container-plans{
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: justify;
+}
+.row{
+    width: 100%;
+    margin: 50px 0;
+}
+.row h3{
+    font-size: 24px;
+}
+.row p{
+    font-size: 20px;
+}
+.row img.left{
+    float: left;
+    margin-right: 30px;
+}
+.row img.right{
+    float: right;
+    margin-left: 30px;
 }
