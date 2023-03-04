@@ -16,6 +16,7 @@ footer{
   }
   .tech i{
     margin-right: 10px;
+    font-size: 24px;
   }
   .tech i:first-of-type{
     color: rgb(255, 119, 0);
