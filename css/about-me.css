@@ -9,6 +9,7 @@
     --bg-color1: #357171;
     --bg-color2: #75DAAD;
     --bg-color3: #5ca18d;
+    --font-blue: rgb(6, 6, 47);
   }
   body{
     color: var( --font-color);
@@ -46,7 +47,7 @@ section{
     border-radius: 8px;
 }
 .center-div span:hover{
-    color: rgb(6, 6, 47);
+    color: var(--font-blue);
     background-color: var(--font-color);
 }
 .center-div p{
@@ -94,11 +95,11 @@ section{
 #learn{
     /* background-color: #649c8c; */
     background-color: var(--bg-color2);
-    height: 100vh;
+    height: calc(100vh - 40px);
 }
 #learn h1, #plans h1{
     font-size: 4rem;
-    padding: 50px;
+    padding: 50px 0 20px;
     text-align: center;
 }
 #learn hr, #plans hr{
@@ -114,7 +115,7 @@ section{
     width: 90%;
     max-width: 1200px;
     height: 490px;
-    margin: 80px auto 0px;
+    margin: 50px auto 0px;
     display: flex;
     gap: 20px;
 }
@@ -155,7 +156,7 @@ section{
 #plans{
     /* background-color: #75DAAD; */
     background-color: var(--bg-color3);
-    height: calc(100vh - 10px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,12 +175,13 @@ section{
 .row{
     width: 100%;
     margin: 30px 0;
+    transition: all 0.5s ease-in-out;
 }
 .row h3{
     font-size: 24px;
 }
 .row p{
-    font-size: 20px;
+    font-size: 16px;
 }
 .row img.left{
     float: left;
@@ -188,4 +190,11 @@ section{
 .row img.right{
     float: right;
     margin-left: 30px;
+}
+.row:hover{
+    scale: 1.1;
+    background-color: var(--font-color);
+    padding: 10px 0px;
+   color: var(--bg-color1);
+    border-radius: 8px;
 }
