@@ -170,6 +170,9 @@ span[class="java"]{
   justify-content: center;
   font-size: 26px;
 }
+.contact-links a:hover{
+  color: #08241d;
+}
 /* @media only screen and (min-width: 320px) and (max-width: 1024px){
   nav ul{
     font-size: 20px;
