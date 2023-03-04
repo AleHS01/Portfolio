@@ -3,8 +3,7 @@
   scroll-behavior: smooth;
 }
 :root{
-  --tech-font: 32px;
-  --font-code: monospace;
+
 }
 .fab, .fa-brands{
   font-family: "Font Awesome 5 Brands";
@@ -46,12 +45,12 @@ section{
 span[class="web"]{
   color: #72f5f5;
   font-weight: bold;
-  font-size: var(--tech-font);
+  font-size: 32px;
 }
 span[class="java"]{
   color: #Ef964a;
   font-weight: bold;
-  font-size: var(--tech-font);
+  font-size: 32px;
 }
 /* Project Sections */
 #projects{
@@ -145,9 +144,9 @@ span[class="java"]{
 /* Contact Section */
 .Contact{
   background-color: #435b78;
-  height: 100vh;
-  padding-top: 25%;
-  text-align: center
+  height: 75vh;
+  padding-top: 15%;
+  text-align: center;
 }
 .Contact h1{
   margin: -1px 0 0 0;;
@@ -156,7 +155,7 @@ span[class="java"]{
 .Contact p{
   font-size: 18px;
   margin-top: 0;
-  font-family: var(--font-code);
+  font-family: monospace;
 }
 .contact-links {
   margin-top: 5%;

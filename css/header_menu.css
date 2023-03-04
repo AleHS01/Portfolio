@@ -29,7 +29,8 @@ header{
      font-family: 'Shantell Sans', serif;
 }
 nav ul li{
-     width: 100px;
+     width: 135px;
+     text-align: center;
 }
 nav ul li:hover{
     color: #357171;
@@ -44,9 +45,6 @@ nav ul li a.a-left{
     background-color: white;
     width: 0%;
     transition: all 0.5s ease-out;
-}
-.a1{
-    padding-left: 10px;
 }
 nav ul li:hover .bar{
     width: 100%;
