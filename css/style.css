@@ -2,6 +2,13 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+:root{
+  --font-color: #EEF2E6;
+  --bg-color1: #357171;
+  --bg-color2: #75DAAD;
+  --bg-color3: #5ca18d;
+  --color-cy: #72f5f5;
+}
 .fab, .fa-brands{
   font-family: "Font Awesome 5 Brands";
   font-size: 22px;
@@ -10,7 +17,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
-  color: #fff;
+  color: var(--font-color);
 }
 section{
   /* margin-top: 1px; */
@@ -18,7 +25,7 @@ section{
 }
 #welcome-section{
   margin: 0;
-  background-color: #357171;
+  background-color: var(--bg-color1);
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
@@ -40,7 +47,7 @@ section{
   
 }
 span[class="web"]{
-  color: #72f5f5;
+  color: var(--color-cy);
   font-weight: bold;
   font-size: 32px;
 }
@@ -51,7 +58,7 @@ span[class="java"]{
 }
 /* Project Sections */
 #projects{
-  background-color: #75DAAD;
+  background-color: var(--bg-color2);
   height: calc(100vh + 125px);
   padding: 30px 0px 0px 0px;
   /* margin: -1px 0; */
@@ -66,7 +73,7 @@ span[class="java"]{
   width: 52%;
   height: 3px;
   border: 0px;
-  background-color: white;
+  background-color:var(--font-color);
 }
 .button{
   font-family: monospace;
@@ -74,7 +81,7 @@ span[class="java"]{
   height: 40px;
   border-radius: 8px;
   border: 0;
-  background-color: #00f7fc;
+  background-color: var(--color-cy);
   font-size: 22px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -84,10 +91,10 @@ span[class="java"]{
 }
 .button:hover{
   background-color: #171515;
-  color: #e8eaea;
+  color: var(--font-color);
 }
 .button:hover::after{
-  color: #e8eaea;
+  color: var(--font-color);
 } 
 /* Projects links */
 .main-container{
@@ -141,7 +148,7 @@ span[class="java"]{
 }
 /* Contact Section */
 .Contact{
-  background-color: #5ca18d;
+  background-color: var(--bg-color3);
   height: 76vh;
   padding-top: 15%;
   text-align: center;

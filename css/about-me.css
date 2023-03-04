@@ -6,9 +6,13 @@
   }
   :root{
     --font-color: #EEF2E6;
+    --bg-color1: #357171;
+    --bg-color2: #75DAAD;
+    --bg-color3: #5ca18d;
   }
   body{
     color: var( --font-color);
+    font-family: Helvetica, sans-serif;
   }
 section{
     width: 100%;
@@ -16,7 +20,7 @@ section{
 }
 /* About me - Section 1 */
 #about-me{
-    background-color: #357171;
+    background-color: var(--bg-color1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +64,7 @@ section{
 }
 .arrow-container:hover > .arrows{
     scale: 1.1;
-    box-shadow: #EEF2E6 0px 0px 5px 1px;
+    box-shadow: var(--font-color) 0px 0px 5px 1px;
 }
 .arrow-container:hover .arr2{
     left: 31px
@@ -79,7 +83,7 @@ section{
 /* Learning - Section 2 */
 #learn{
     /* background-color: #649c8c; */
-    background-color: #75DAAD;
+    background-color: var(--bg-color2);
 }
 #learn h1, #plans h1{
     font-size: 4rem;
@@ -88,7 +92,7 @@ section{
 }
 #learn hr, #plans hr{
     width: 8%;
-    border-top: 10px dotted #EEF2E6;
+    border-top: 10px dotted var(--font-color);
     margin: 0 auto;
     border-left: none;
     border-right: none;
@@ -138,7 +142,7 @@ section{
 /* Plans - Section 3 */
 #plans{
     /* background-color: #75DAAD; */
-    background-color: #5ca18d;
+    background-color: var(--bg-color3);
     display: flex;
     flex-direction: column;
     justify-content: center;
