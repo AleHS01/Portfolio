@@ -2,9 +2,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-:root{
-
-}
 .fab, .fa-brands{
   font-family: "Font Awesome 5 Brands";
   font-size: 22px;
@@ -16,7 +13,7 @@ body{
   color: #fff;
 }
 section{
-  margin-top: 1px;
+  /* margin-top: 1px; */
   margin-bottom: 0px;
 }
 #welcome-section{
@@ -57,7 +54,7 @@ span[class="java"]{
   background-color: #649c8c;
   height: calc(100vh + 125px);
   padding: 30px 0px 0px 0px;
-  margin: -1px 0;
+  /* margin: -1px 0; */
   max-width: 100%;
 }
 #projects h1{
@@ -120,6 +117,7 @@ span[class="java"]{
   height: 80%;
   margin-bottom: -3px;
   border-radius: 8px 8px 0px 0px;
+  transition: opacity 0.5s;
 }
 .container figure figcaption{
   width: 100%;
@@ -144,7 +142,7 @@ span[class="java"]{
 /* Contact Section */
 .Contact{
   background-color: #435b78;
-  height: 75vh;
+  height: 76vh;
   padding-top: 15%;
   text-align: center;
 }

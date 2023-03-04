@@ -1,4 +1,48 @@
-body{
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+  }
+  :root{
+    --font-color: #EEF2E6;
+  }
+  body{
+    color: var( --font-color);
+  }
+section{
+    width: 100%;
+}
+/* About me - Section 1 */
+#about-me{
+    height: calc(100vh - 60px);
+    background-color: #357171;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-div{
+    border-left: 3px solid var(--font-color);
+    padding-left: 10px;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+}
+.center-div h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.center-div p{
+    font-size: 24px;
+    line-height: 1.5;
+}
+/* Learning - Section 2 */
+#learn{
+    height: calc(100vh - 60px);
+    background-color: #649c8c;
+}
+/* Plans - Section 3 */
+#plans{
+
 }
