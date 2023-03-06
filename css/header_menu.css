@@ -18,9 +18,9 @@ header{
     padding: 0;
   }
   nav ul{
-    width: 50%;
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
      list-style: none;
      font-size: 28px;

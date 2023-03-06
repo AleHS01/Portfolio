@@ -37,7 +37,7 @@ section{
   margin: 0;
   padding: 0;
 }
-#welcome-section h1{
+#welcome-section h1, #freelancing h1{
   font-size: 6rem;
   font-family: 'Sacramento', sans-serif;
 }
@@ -173,6 +173,72 @@ span[class="java"]{
 .contact-links a:hover{
   color: #08241d;
 }
+
+/* Freelancing */
+
+#freelancing{
+  height: calc(100vh - 60px);
+  margin: 0;
+  background-color: #08241d;
+  
+}
+#freelancing h1{
+  text-align: center;
+  margin: 0;
+  padding: 70px 0px 20px;
+}
+.fl-main-container figure{
+  transition: all 0.5s ease-in-out;
+}
+.fl-main-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.fl-main-container figure img{
+  width: 700px;
+  height: 450px;
+  border-radius: 8px;
+}
+.fl-main-container figure figcaption{
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  color: #08241d;
+  background-color: var(--font-color);
+  border-radius: 0px 0 8px 8px;
+  padding: 3px;
+  font-weight: bold;
+  
+}
+.fl-main-container figure:hover{
+  scale: 1.025;
+  opacity: 0.8;
+}
+.fl-container2{
+  padding: 0px 100px;
+  border-left: 1px solid var(--font-color);
+  height: 100%;
+}
+.fl-container2 p{
+  line-height: 2;
+  font-size: 18px;
+}
+.fl-container2 h2{
+  font-size: 42px;
+  padding-top: 70px;
+  text-align: center;
+}
+.fa-arrow-up-right-from-square{
+  font-size: 20px;
+}
+.fl-container2 a:hover{
+  width: 100%;
+  text-decoration: underline;
+}
+
+
+
 /* @media only screen and (min-width: 320px) and (max-width: 1024px){
   nav ul{
     font-size: 20px;
