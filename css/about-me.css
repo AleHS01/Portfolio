@@ -198,3 +198,6 @@ section{
    color: var(--bg-color1);
     border-radius: 8px;
 }
+.pop-up{
+    padding: 15px;
+}
