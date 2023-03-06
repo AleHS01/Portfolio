@@ -177,7 +177,7 @@ span[class="java"]{
 /* Freelancing */
 
 #freelancing{
-  height: calc(100vh - 60px);
+  height: calc(100vh + 25px);
   margin: 0;
   background-color: #08241d;
   
@@ -216,7 +216,7 @@ span[class="java"]{
   opacity: 0.8;
 }
 .fl-container2{
-  padding: 0px 100px;
+  padding: 0px 70px;
   border-left: 1px solid var(--font-color);
   height: 100%;
 }
