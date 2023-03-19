@@ -1,4 +1,6 @@
-header{
+
+
+/* header{
     display: flex;
     justify-content: flex-end;
     background-color: #0aa778;
@@ -38,16 +40,28 @@ nav ul li:hover{
 nav ul li a.a-left{
      position: relative;
     left: 30px;
+} */
+.navbar{
+    background-color: #0aa778;
+    
+}
+.nav-link{
+    color: #EEF2E6;
+}
+.nav-link:hover{
+    color: #357171;
 }
 .bar{
     position: relative;
     height: 2px;
-    background-color: white;
+    background-color: #EEF2E6;
     width: 0%;
-    transition: all 0.5s ease-out;
+    transition: width 0.5s ease-out, background-color 1s ease-out;
+    /* transition: background-color 0.8s ease-out; */
 }
 nav ul li:hover .bar{
     width: 100%;
+    background-color: #357171;
 }
 nav ul li .bar:focus{
     width: 100%;

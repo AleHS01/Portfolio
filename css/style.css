@@ -9,6 +9,12 @@
   --bg-color3: #5ca18d;
   --color-cy: #72f5f5;
 }
+/* a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+} */
 .fab, .fa-brands{
   font-family: "Font Awesome 5 Brands";
   font-size: 22px;

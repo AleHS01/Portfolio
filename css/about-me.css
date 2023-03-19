@@ -21,6 +21,7 @@
 section{
     width: 100%;
 }
+
 /* About me - Section 1 */
 #about-me{
     background-color: var(--bg-color1);
@@ -30,6 +31,12 @@ section{
     justify-content: center;
     align-items: center;
 }
+/* #about-me a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+} */
 .center-div{
     border-left: 3px solid var(--font-color);
     padding-left: 10px;
