@@ -43,20 +43,41 @@ nav ul li a.a-left{
 } */
 .navbar{
     background-color: #0aa778;
-    
+    height: 60px;    
+    padding: 0;
 }
 .nav-link{
+    font-family: 'Shantell Sans', serif;
+    font-size: 22px;
+}
+.nav-link,.navbar-brand{
     color: #EEF2E6;
 }
-.nav-link:hover{
+.navbar-brand{
+    font-family: 'Sacramento', sans-serif;
+    font-size: 42px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.nav-link:hover, .navbar-brand:hover{
     color: #357171;
 }
+.navbar-collapse{
+    background-color: #0aa778;
+    margin: -3.5px;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .bar{
     position: relative;
     height: 2px;
     background-color: #EEF2E6;
     width: 0%;
     transition: width 0.5s ease-out, background-color 1s ease-out;
+    bottom: 10px;
     /* transition: background-color 0.8s ease-out; */
 }
 nav ul li:hover .bar{
