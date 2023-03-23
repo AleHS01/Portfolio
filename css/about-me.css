@@ -31,12 +31,10 @@ section{
     justify-content: center;
     align-items: center;
 }
-/* #about-me a{
+#about-me a{
     text-decoration: none;
-    color: inherit;
-    margin: 0;
-    padding: 0;
-} */
+    color: #EEF2E6;
+}
 .center-div{
     border-left: 3px solid var(--font-color);
     padding-left: 10px;
