@@ -44,11 +44,11 @@ nav ul li a.a-left{
 .navbar{
     background-color: #0aa778;
     height: 60px;    
-    padding: 0;
+    padding: 5px 20px;
 }
 .nav-link{
     font-family: 'Shantell Sans', serif;
-    font-size: 22px;
+    font-size: 28px;
 }
 .nav-link,.navbar-brand{
     color: #EEF2E6;
@@ -78,7 +78,6 @@ nav ul li a.a-left{
     width: 0%;
     transition: width 0.5s ease-out, background-color 1s ease-out;
     bottom: 10px;
-    /* transition: background-color 0.8s ease-out; */
 }
 nav ul li:hover .bar{
     width: 100%;
