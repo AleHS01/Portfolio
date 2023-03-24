@@ -43,9 +43,16 @@ nav ul li a.a-left{
 } */
 .navbar{
     background-color: #0aa778;
-    height: 60px;    
-    padding: 5px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+     width: 100%;    
+    z-index: 5;
+    position: fixed; 
 }
+.navbar-collapse{
+    /* background-color: #0aa778; */
+}
+
 .nav-link{
     font-family: 'Shantell Sans', serif;
     font-size: 28px;
