@@ -10,6 +10,13 @@
   --color-cy: #72f5f5;
   --font-cursive: 'Sacramento', sans-serif;
 }
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  color: var(--font-color);
+  overflow-x: hidden;
+}
 a{
   text-decoration: none;
   color: var(--font-color);
@@ -17,12 +24,6 @@ a{
 .fab, .fa-brands{
   font-family: "Font Awesome 5 Brands";
   font-size: 22px;
-}
-body{
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica, sans-serif;
-  color: var(--font-color);
 }
 .zero{
   margin: 0;
