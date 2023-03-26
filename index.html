@@ -120,26 +120,46 @@
     </section>
     <section id="freelancing">
       <h1>Freelance Work</h1>
-      <div class="fl-main-container">
-        <div class="fl-container">
-          <a href="https://fantasyboxandsweet.wixsite.com/home" target="_blank">
-            <figure>
-              <img src="./images/FantasyBox.png" alt="Fantasy Box & Sweet Flowers">
-              <figcaption>Fantasy Box & Sweet Flowers</figcaption>
-            </figure>
-          </a>
+      <div id="carouselIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <!-- <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
         </div>
-        <div class="fl-container2">
-          <a href="https://fantasyboxandsweet.wixsite.com/home" target="_blank">
-            <h2>Wix E-commerce Store <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
-          </a>
-          <p>Fantasy Box & Sweet Flowers is an online store which I am developing for a client. The client had a
-            physical store and had the need to reach a wider audience and start selling through a website.
-            The site is being designed and developed by me, all the functionalities that the site should have such as
-            payments, order management, having a shipping label created when ordering and product placement
-            are currently in process, and will be added as the necessary information is provided to me.</p>
+        <div class="carousel-inner">
+          <div class="fl-main-container carousel-item active">
+            <div class="fl-container fl">
+              <a href="https://fantasyboxandsweet.wixsite.com/home" target="_blank" class="pb-2">
+                <figure>
+                  <img src="./images/FantasyBox.png" alt="Fantasy Box & Sweet Flowers">
+                  <figcaption>Fantasy Box & Sweet Flowers</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="fl-container2 fl">
+              <a href="https://fantasyboxandsweet.wixsite.com/home" target="_blank">
+                <h2>Wix E-commerce Store <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+              </a>
+              <p>Fantasy Box & Sweet Flowers is an online store which I am developing for a client. The client had a
+                physical store and had the need to reach a wider audience and start selling through a website.
+                The site is being designed and developed by me, all the functionalities that the site should have such as
+                payments, order management, having a shipping label created when ordering and product placement
+                are currently in process, and will be added as the necessary information is provided to me.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+      
     </section>
     <section class="Contact" id="contact">
       <h1>Let's work together!</h1>

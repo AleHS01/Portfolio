@@ -7,6 +7,7 @@
   --bg-color1: #357171;
   --bg-color2: #6ac099;
   --bg-color3: #5ca18d;
+  --bg-color4: #08241d;
   --color-cy: #72f5f5;
   --font-cursive: 'Sacramento', sans-serif;
 }
@@ -15,7 +16,7 @@ body{
   padding: 0;
   font-family: Helvetica, sans-serif;
   color: var(--font-color);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 a{
   text-decoration: none;
@@ -92,7 +93,7 @@ span[class="java"]{
 
 #projects{
   background-color: var(--bg-color2);
-  padding: 20px 0;
+  padding: 20px; /* Add media querry for large screen - for spacing*/
   width: 100%;
 }
 #projects h1{
@@ -196,27 +197,33 @@ figcaption span[class="discrete"]{
 /* Freelancing */
 
 #freelancing{
-  height: calc(100vh + 25px);
+  /* min-height: 100vh; */
   margin: 0;
-  background-color: #08241d;
+  background-color: var(--bg-color4);
+  padding: 40px 0 60px;
   
 }
 #freelancing h1{
   text-align: center;
-  margin: 0;
-  padding: 70px 0px 20px;
-}
-.fl-main-container figure{
-  transition: all 0.5s ease-in-out;
+  margin-bottom: 30px;
+  /* padding: 70px 0px 20px; */
 }
 .fl-main-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
+  max-height: 410px;
+  padding-top: 5px;
+}
+.fl-main-container figure{
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+  /* padding: 50px 0; */
 }
 .fl-main-container figure img{
-  width: 700px;
-  height: 450px;
+  width: 650px;
+  /* height: 380px; */
+  height: 100%;
   border-radius: 8px;
 }
 .fl-main-container figure figcaption{
@@ -226,33 +233,40 @@ figcaption span[class="discrete"]{
   color: #08241d;
   background-color: var(--font-color);
   border-radius: 0px 0 8px 8px;
-  padding: 3px;
+  padding: 3px 0;
   font-weight: bold;
   
 }
 .fl-main-container figure:hover{
-  scale: 1.025;
-  opacity: 0.8;
+  scale: 1.01;
+  opacity: 0.9;
+}
+.fl, .fl-container > a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .fl-container2{
-  padding: 0px 70px;
+  /* padding: 0px 70px; */
   border-left: 1px solid var(--font-color);
-  height: 100%;
 }
 .fl-container2 p{
   line-height: 2;
   font-size: 18px;
+  max-width: 580px;
 }
 .fl-container2 h2{
   font-size: 42px;
-  padding-top: 70px;
+  padding: 20px 0;
   text-align: center;
 }
 .fa-arrow-up-right-from-square{
   font-size: 20px;
 }
 .fl-container2 a:hover{
-  width: 100%;
+  /* width: 100%; */
   text-decoration: underline;
 }
 
