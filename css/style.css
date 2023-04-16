@@ -71,26 +71,6 @@ span[class="java"]{
   font-weight: bold;
   font-size: 32px;
 }
-
-/* Project Sections */
-/* #projects > div:first-of-type{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: 0;
-  background-size: 56px 56px;
-  background-image: 
-  linear-gradient(135deg, transparent 55%,  var(--bg-color2) 55%),
-  radial-gradient( transparent 6px, var(--bg-color1) 6px,
-  var(--bg-color1) 10px, transparent 10px,
-  transparent 15px,  var(--bg-color1) 15px,
-  var(--bg-color1) 19px, transparent 19px,
-  transparent 24px,  var(--bg-color1) 24px,
-  var(--bg-color1) 28px, transparent 28px);
-} */
-
 #projects{
   background-color: var(--bg-color2);
   padding: 20px; /* Add media querry for large screen - for spacing*/
