@@ -269,7 +269,10 @@ figcaption span[class="discrete"]{
   /* width: 100%; */
   text-decoration: underline;
 }
-
+/* Carousel  */
+.carousel-item{
+  padding-bottom: 30px;
+}
 
 
 /* @media only screen and (min-width: 320px) and (max-width: 1024px){
@@ -326,4 +329,9 @@ figcaption span[class="discrete"]{
 #projects hr{
   width: 75%;
 }
+} */
+/* @media print{
+  *{
+    color: red;
+  }
 } */
