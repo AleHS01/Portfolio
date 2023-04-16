@@ -10,6 +10,7 @@
     --bg-color2: #75DAAD;
     --bg-color3: #5ca18d;
     --font-blue: rgb(6, 6, 47);
+    --font-cursive: 'Sacramento', sans-serif;
   }
   body{
     color: var( --font-color);
@@ -20,6 +21,12 @@
   }
 section{
     width: 100%;
+}
+h1:not(.center-div > h1, .tech > h1){
+    font-family: var(--font-cursive);
+    font-size: 6rem;
+    padding: 50px 0 20px;
+    text-align: center;
 }
 
 /* About me - Section 1 */
@@ -41,7 +48,8 @@ section{
     width: 80%;
     max-width: 700px;
     height: fit-content;
-    margin-bottom: 100px;
+    /* margin-bottom: 80px; */
+    margin: 80px 0px 50px;
     text-align: justify;
 }
 .center-div h1{
@@ -106,11 +114,11 @@ section{
     min-height: calc(100vh - 40px);
     padding-bottom: 100px;
 }
-#learn h1, #plans h1{
+/* #learn h1, #plans h1{
     font-size: 4rem;
     padding: 50px 0 20px;
     text-align: center;
-}
+} */
 #learn hr, #plans hr{
     width: 8%;
     border-top: 10px dotted var(--font-color);
@@ -178,6 +186,7 @@ section{
 }
 .container-plans{
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     line-height: 2;
     text-align: justify;
