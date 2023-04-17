@@ -31,7 +31,8 @@ h1:not(.center-div > h1, .tech > h1){
 
 /* About me - Section 1 */
 #about-me{
-    background-color: var(--bg-color1);
+    /* background-color: var(--bg-color1); */
+    background-image: repeating-linear-gradient(45deg, #357171 20px, #08241d 50px);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -51,6 +52,8 @@ h1:not(.center-div > h1, .tech > h1){
     /* margin-bottom: 80px; */
     margin: 80px 0px 50px;
     text-align: justify;
+    background-color: rgb(39, 39, 39, 0.6);
+    border-radius: 8px;
 }
 .center-div h1{
     font-size: 3.125rem;
