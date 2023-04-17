@@ -15,12 +15,18 @@ footer{
     font-size: 24px;
   }
   .tech i{
-    margin-right: 10px;
+    margin-right: 0px;
     font-size: 24px;
   }
-  .tech i:first-of-type{
+  .tech i.fa-html5{
     color: rgb(255, 119, 0);
   }
-  .tech i:last-of-type{
+  .tech i.fa-css3-alt{
     color: rgb(0, 162, 255);
+  }
+  .tech i.fa-bootstrap{
+    color: rgb(184, 93, 200);
+  }
+  .tech i.fa-js{
+    color: #F0DB4F  ;
   }
