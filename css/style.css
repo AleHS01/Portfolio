@@ -186,7 +186,6 @@ figcaption span[class="discrete"]{
 #freelancing h1{
   text-align: center;
   margin-bottom: 30px;
-  /* padding: 70px 0px 20px; */
 }
 .fl-main-container{
   display: grid;
@@ -283,9 +282,32 @@ figcaption span[class="discrete"]{
     font-size: 1.5rem;
   }
 
-  /* .column-link figure{
-    width: 270px;
-    height: 250px;
-  } */
+  /* Freelancing Section */
+  .fl-main-container{
+    position: relative;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    max-height: 355px;
+  }
+  .fl-container{
 
+  }
+  .fl-main-container figure img{
+    width: 530px;
+  }
+  .fl-container2{
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8 );
+    width: fit-content;
+    border-radius: 8px;
+    top: 100%;
+    transition: top 1s ease-in-out;
+  }
+  .fl-container:hover + .fl-container2, .fl-container2:hover{
+    top: 5px;
+  }
+  /* .fl-main-container figure figcaption{
+    z-index: 2;
+  } */
 }
