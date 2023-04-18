@@ -8,15 +8,16 @@ footer{
     padding: 20px 0 0 0;
   }
   .tech{
-    margin-bottom: 20px;
+    margin-bottom: 3px;
   }
   .tech p{
     display: inline;
-    font-size: 24px;
+  }
+  .tech p, .tech i{
+    font-size: 1.5rem;
   }
   .tech i{
     margin-right: 0px;
-    font-size: 24px;
   }
   .tech i.fa-html5{
     color: rgb(255, 119, 0);
@@ -29,4 +30,13 @@ footer{
   }
   .tech i.fa-js{
     color: #F0DB4F  ;
+  }
+  @media only screen and (max-width: 991px) {
+    .tech h1{
+      font-size: 1.8rem;
+    }
+    .tech p, .tech i{
+      font-size: 1.2rem;
+    }
+    
   }
