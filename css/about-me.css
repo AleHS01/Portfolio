@@ -33,7 +33,7 @@ h1:not(.center-div > h1, .tech > h1){
 #about-me{
     /* background-color: var(--bg-color1); */
     background-image: repeating-linear-gradient(45deg, #357171 20px, #08241d 50px);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +47,7 @@ h1:not(.center-div > h1, .tech > h1){
     border-left: 3px solid var(--font-color);
     padding-left: 10px;
     width: 80%;
+    min-width: 550px;
     max-width: 700px;
     height: fit-content;
     /* margin-bottom: 80px; */
@@ -110,11 +111,11 @@ h1:not(.center-div > h1, .tech > h1){
         transform: translateY(0px);
     }
 }
+
 /* Learning - Section 2 */
 #learn{
-    /* background-color: #649c8c; */
     background-color: var(--bg-color2);
-    min-height: calc(100vh - 40px);
+    min-height: 100vh;
     padding-bottom: 100px;
 }
 /* #learn h1, #plans h1{
@@ -223,4 +224,41 @@ h1:not(.center-div > h1, .tech > h1){
 }
 .pop-up{
     padding: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    
+    #learn h1, #plans h1{
+        font-size: 5.6rem;
+    }
+    
+    .center-div{
+        max-width: 650px;
+        min-width: 350px;
+        margin: 80px 0px 20px;
+    }
+    .center-div h1{
+        font-size: 2.125rem;
+        margin-bottom: 10px;
+    }
+    .center-div span{
+        font-size: 0.7rem;
+        padding: 3px;
+    }
+    .center-div p{
+        font-size: 1.3rem;
+        
+    }
+
+
+    /* Learn - Section */
+    .main-container{
+        /* width: 90%;
+        max-width: 1200px;
+        height: 560px;
+        margin: 50px auto 0px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
 }

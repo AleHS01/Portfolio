@@ -152,6 +152,10 @@ figcaption span[class="discrete"]{
   height: 76vh;
   padding-top: 15%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .Contact h1{
   margin: -1px 0 0 0;;
@@ -163,7 +167,7 @@ figcaption span[class="discrete"]{
   font-family: monospace;
 }
 .contact-links {
-  margin-top: 5%;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -186,7 +190,6 @@ figcaption span[class="discrete"]{
 #freelancing h1{
   text-align: center;
   margin-bottom: 30px;
-  /* padding: 70px 0px 20px; */
 }
 .fl-main-container{
   display: grid;
@@ -234,7 +237,7 @@ figcaption span[class="discrete"]{
 }
 .fl-container2 p{
   line-height: 2;
-  font-size: 18px;
+  font-size: 1.125rem;
   max-width: 580px;
 }
 .fl-container2 h2{
@@ -283,9 +286,47 @@ figcaption span[class="discrete"]{
     font-size: 1.5rem;
   }
 
-  /* .column-link figure{
-    width: 270px;
-    height: 250px;
-  } */
+  /* Freelancing Section */
+  .fl-main-container{
+    position: relative;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    max-height: 355px;
+  }
+  /* .fl-container{
 
+  } */
+  .fl-main-container figure img{
+    width: 530px;
+  }
+  .fl-container2{
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8 );
+    width: fit-content;
+    max-width: 530px;
+    border-radius: 8px;
+    top: 100%;
+    transition: top 1s ease-in-out;
+  }
+  .fl-container:hover + .fl-container2, .fl-container2:hover{
+    top: 5px;
+  }
+  .fl-container2 p{
+    font-size: 1.025rem;
+    text-align: justify;
+  }
+  .fl-container2 h2{
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+  /* .fl-main-container figure figcaption{
+    z-index: 2;
+  } */
+  .carousel-control-prev{
+    padding-right: 30px !important;
+  }
+  .carousel-control-next{
+    padding-left: 30px;
+  }
 }
