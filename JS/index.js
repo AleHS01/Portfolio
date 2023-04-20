@@ -5,7 +5,7 @@ let pagePrevPos = window.scrollY + 50;
 window.addEventListener('scroll', function(){
     let pageCurrPos = this.window.scrollY;
 
-    if(pagePrevPos > pageCurrPos){ //user is scrolling up
+    if(pagePrevPos > pageCurrPos || (pagePrevPos >= 0 && pagePrevPos <= 100)){ //user is scrolling up
         nav.style.top = "0";
     }
     else{
@@ -14,11 +14,15 @@ window.addEventListener('scroll', function(){
 
     pagePrevPos = pageCurrPos;
 });
-  // if(event.pageY > 0){
-    //     // header.classList.add("scroll-down");
-    //     header.style.opacity = "0";
-    // }
-    // else{
-    //     // header.classList.add("scroll-up");
-    //     header.style.opacity = "1";
-    // }
+ 
+//Deleting the PopAnimation after 8 secs
+
+setTimeout(()=>{
+    let popUp = document.getElementById("pop-up");
+    popUp.style.transition = "opacity 1s linear";
+    popUp.style.opacity = "0";
+    setTimeout(() =>{
+        popUp.style.display = "none"; //Removing the element fromt the document flow
+    },1000)
+    
+},4000);

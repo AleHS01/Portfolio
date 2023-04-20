@@ -224,12 +224,13 @@ h1:not(.center-div > h1, .tech > h1){
    color: var(--bg-color1);
     border-radius: 8px;
 }
+
 /* Background PopUp */
-.css-popup{
+.css-pop-up{
     position: absolute;
     bottom: 30px;
     right: 20px;
-    width: 280px;
+    width: 350px;
     text-align: center;
     font-size: 1rem;
     color: var(--bg-color1);
@@ -241,6 +242,9 @@ h1:not(.center-div > h1, .tech > h1){
     animation: popup  1s linear infinite;
     box-shadow: #75DAAD -4px 4px;
     /* transition: transform 5s ease-in-out infinite; */
+}
+.css-pop-up > span{
+    color: #604aef;
 }
 @keyframes popup {
     0%{
@@ -302,4 +306,13 @@ h1:not(.center-div > h1, .tech > h1){
         margin: 0 auto;
         /* margin: 0 auto; */
     }
+    /* Pop-up */
+    .css-pop-up{
+        bottom: 10px;
+        right: 5px;
+    }
+    .css-pop-up  > span{
+        display: none;
+    }
+    
 }
