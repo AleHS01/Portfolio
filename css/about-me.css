@@ -38,6 +38,7 @@ h1:not(.center-div > h1, .tech > h1){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 #about-me a{
     text-decoration: none;
@@ -45,7 +46,7 @@ h1:not(.center-div > h1, .tech > h1){
 }
 .center-div{
     border-left: 3px solid var(--font-color);
-    padding-left: 10px;
+    padding: 0 10px;
     width: 80%;
     min-width: 550px;
     max-width: 700px;
@@ -223,8 +224,35 @@ h1:not(.center-div > h1, .tech > h1){
    color: var(--bg-color1);
     border-radius: 8px;
 }
-.pop-up{
-    padding: 15px;
+/* Background PopUp */
+.css-popup{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 280px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--bg-color1);
+    background-color: var(--font-color);
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 3px;
+    transform-origin: 50% 50%;
+    animation: popup  1s linear infinite;
+    box-shadow: #75DAAD -4px 4px;
+    /* transition: transform 5s ease-in-out infinite; */
+}
+@keyframes popup {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
 }
 
 @media only screen and (max-width: 991px) {
@@ -263,5 +291,15 @@ h1:not(.center-div > h1, .tech > h1){
     }
     .container-learn img{
         height: 180px;
+    }
+
+    /* Plans - Section */
+    #plans img{
+        width: 100px;
+        height: 100px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 }
