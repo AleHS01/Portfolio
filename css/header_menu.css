@@ -5,8 +5,9 @@
     width: 100%;    
     z-index: 5;
     position: fixed; 
+    transition: top 0.8s ease-out;
+    -webkit-transition: top 0.8s ease-out;
 }
-
 .nav-link{
     font-family: 'Shantell Sans', serif;
     font-size: 28px;

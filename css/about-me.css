@@ -31,7 +31,6 @@ h1:not(.center-div > h1, .tech > h1){
 
 /* About me - Section 1 */
 #about-me{
-    /* background-color: var(--bg-color1); */
     background-image: repeating-linear-gradient(45deg, #357171 20px, #08241d 50px);
     min-height: 100vh;
     display: flex;
@@ -60,6 +59,7 @@ h1:not(.center-div > h1, .tech > h1){
 .center-div h1{
     font-size: 3.125rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 .center-div span{
     font-size: 14px;
@@ -240,6 +240,7 @@ h1:not(.center-div > h1, .tech > h1){
     padding: 3px;
     transform-origin: 50% 50%;
     animation: popup  1s linear infinite;
+    -webkit-animation: popup  1s linear infinite;;
     box-shadow: #75DAAD -4px 4px;
     /* transition: transform 5s ease-in-out infinite; */
 }
@@ -275,7 +276,7 @@ h1:not(.center-div > h1, .tech > h1){
         margin-bottom: 10px;
     }
     .center-div span{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding: 3px;
     }
     .center-div p{
@@ -315,4 +316,36 @@ h1:not(.center-div > h1, .tech > h1){
         display: none;
     }
     
+}
+
+@media only screen and (max-width: 767px){
+
+    #learn h1, #plans h1{
+        font-size: 3.4rem;
+    }
+    /* About me - section */
+    .center-div{
+        border: 0px;
+        margin-bottom: 0px;
+    }
+    .center-div h1{
+        font-size: 2.125rem;
+        /* margin-bottom: 20px; */
+    }
+    .center-div span{
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 3px;
+    }
+    /* Learn - Section*/
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    /* Pop-up */
+    .css-pop-up{
+        display: none;
+    }
 }
